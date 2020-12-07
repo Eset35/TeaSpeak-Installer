@@ -554,7 +554,7 @@ cd $TEASPEAK_DIR
 # Downloading and setting up TeaSpeak.
 cyan " "
 cyan "Getting TeaSpeak version..."
-TEASPEAK_VERSION=$(curl -s --connect-timeout 10 -S -L -k https://repo.teaspeak.de/server/linux/amd64_optimized/latest
+TEASPEAK_VERSION=$(curl -s --connect-timeout 10 -S -L -k https://repo.teaspeak.de/server/linux/amd64_optimized/latest)
 TEA_REQUEST_URL="https://repo.teaspeak.de/server/linux/amd64_optimized/TeaSpeak-${TEASPEAK_VERSION}.tar.gz"
 if [ $? -ne 0 ]; then
     error "Failed to load the latest TeaSpeak version!"
